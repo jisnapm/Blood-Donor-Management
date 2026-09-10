@@ -30,7 +30,7 @@ class BloodDonorManager:
             values = [v for v in kwargs.values()]
             self.cursor.execute(q, values)
             self.connection.commit()
-            print("Donor Added Successfully!")
+            # print("Donor Added Successfully!")
         except Exception as e:
             print(e)
 
@@ -96,10 +96,10 @@ class BloodDonorManager:
             print(e)
 
 
-donor_instance = BloodDonorManager()
-# donor_instance.post(name= "Sai", blood_group= "A+", phone="8562641050", city="Calicut", last_donation= datetime.today())
-donor_instance.get()
-# donor_instance.retrieve(5)
-# donor_instance.delete(2)
-donor_instance.put(5, name= "Jismi")
-donor_instance.get()
+# donor_instance = BloodDonorManager()
+# # donor_instance.post(name= "Sai", blood_group= "A+", phone="8562641050", city="Calicut", last_donation= datetime.today())
+# donor_instance.get()
+# # donor_instance.retrieve(5)
+# # donor_instance.delete(2)
+# donor_instance.put(5, name= "Jismi")
+# donor_instance.get()
