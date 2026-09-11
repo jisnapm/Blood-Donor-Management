@@ -40,8 +40,9 @@ class BloodDonorManager:
             q = 'select * from donor'
             self.cursor.execute(q)
             records = self.cursor.fetchall()
-            for data in records:
-                print(data)
+            # for data in records:
+            #     print(data)
+            return records
         except Exception as e:
             print(e)
 
@@ -100,6 +101,6 @@ class BloodDonorManager:
 # # donor_instance.post(name= "Sai", blood_group= "A+", phone="8562641050", city="Calicut", last_donation= datetime.today())
 # donor_instance.get()
 # # donor_instance.retrieve(5)
-# # donor_instance.delete(2)
+# donor_instance.delete(9)
 # donor_instance.put(5, name= "Jismi")
 # donor_instance.get()
